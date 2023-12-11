@@ -1,0 +1,36 @@
+---
+import { Image } from "@astrojs/image/components";
+import { markdownify } from "@lib/utils/textConverter";
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const { title, image, date } = post.data;
+---
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="col-12 md:col-8">
+        <article class="text-center">
+          {
+            image && (
+              <Image
+                src={image}
+                height={500}
+                width={1000}
+                alt={title}
+                class="rounded-lg"
+              />
+            )
+          }
+          <h1 set:html={markdownify(title)} class="h2 my-6 text-left" />
+          <div class="content mb-16 text-left">
+            <p><em>{new Date(date).toLocaleDateString()}</em></p>
+            <Content />
+            <!-- <Markdown content={post.body} components={shortcodes} /> -->
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

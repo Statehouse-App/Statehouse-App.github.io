@@ -1,0 +1,38 @@
+{
+  "site": {
+    "title": "Statehouse App | Simple Legislative Campaign Management",
+    "base_url": "https://statehouseapp.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.ico",
+    "logo": "/images/statehouse_logo_horizontal.png",
+    "logo_width": "200",
+    "logo_height": "42",
+    "logo_text": "Statehouse App"
+  },
+
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200,
+    "blog_folder": "blog"
+  },
+
+  "nav_button": {
+    "enable": false,
+    "label": "Get Started",
+    "link": "/contact"
+  },
+
+  "params": {
+    "contact_form_action": "",
+    "tag_manager_id": "",
+    "footer_content": "Made in Minnesota",
+    "copyright": "Scruffy Software LLC"
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "astro boilerplate"
+  }
+}

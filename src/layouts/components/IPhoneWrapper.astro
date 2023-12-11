@@ -1,0 +1,91 @@
+---
+const { src } = Astro.props;
+---
+
+<div class="device-wrapper mx-auto">
+  <div
+    class="device shadow"
+    data-device="iPhoneX"
+    data-orientation="portrait"
+    data-color="black"
+  >
+    <div class="screen">
+      <img class="img-fluid" src={src} alt="" />
+    </div>
+  </div>
+</div>
+
+<style>
+  .device-wrapper {
+    max-width: 250px;
+    width: 100%;
+    z-index: 999;
+    position: relative;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  .device {
+    position: relative;
+    background-size: cover;
+  }
+  .device::after {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .device .screen {
+    position: absolute;
+    background-size: cover;
+    pointer-events: auto;
+  }
+  .device .button {
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .shadow {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  }
+
+  .device {
+    border-radius: 2.5rem;
+  }
+
+  .device .screen {
+    overflow: hidden;
+  }
+
+  .device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] {
+    padding-bottom: 202.898072%;
+  }
+
+  .device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"]
+    .screen {
+    top: 2.185596%;
+    left: 5.5%;
+    width: 90.225895%;
+    height: 93.628809%;
+  }
+
+  .device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] {
+    padding-bottom: 202.898072%;
+    background-image: url(images/portrait_black.png) !important;
+    z-index: initial;
+  }
+
+  .device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"]
+    .screen {
+    top: 15px;
+    left: 6%;
+    width: 90%;
+    height: 93.49030471%;
+    border: 0px;
+    z-index: -1;
+    overflow: hidden;
+    overflow: hidden;
+  }
+</style>

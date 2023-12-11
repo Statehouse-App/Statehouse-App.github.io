@@ -1,0 +1,65 @@
+{
+  "main": [
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Pricing",
+      "url": "/pricing"
+    },
+    {
+      "name": "Contact",
+      "url": "/#support"
+    },
+    {
+      "name": "FAQ",
+      "url": "/faq"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Links",
+      "menu": [
+        {
+          "text": "Blog",
+          "url": "/blog"
+        },
+        {
+          "text": "iOS App Store",
+          "url": "/pricing"
+        },
+        {
+          "text": "Google Play Store",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "The App",
+      "menu": [
+        {
+          "text": "FAQ",
+          "url": "/faq"
+        },
+        {
+          "text": "Pricing",
+          "url": "/pricing"
+        }
+      ]
+    },
+    {
+      "name": "Policies",
+      "menu": [
+        {
+          "text": "Privacy Policy",
+          "url": "/privacy"
+        },
+        {
+          "text": "Terms & Conditions",
+          "url": "/terms"
+        }
+      ]
+    }
+  ]
+}
