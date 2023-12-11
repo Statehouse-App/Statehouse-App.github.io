@@ -4,9 +4,9 @@ banner:
   content: Steamline your advocacy efforts with Statehouse App, a new tool for legislative campaign management and collaboration.
   image: /images/banner-art.png
   buttons:
-    - image: "images/apple.svg"
+    - image: "/images/apple.svg"
       link: "https://tbd.com"
-    - image: "images/google-play-badge.png"
+    - image: "/images/google-play-badge.png"
       link: "https://tbd.com"
 
 # feature
