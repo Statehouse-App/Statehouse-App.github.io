@@ -4,10 +4,9 @@ import Cta from "@layouts/components/Cta.astro";
 import IPhoneWrapper from "@layouts/components/IPhoneWrapper.astro";
 import { markdownify } from "@lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
-import theme from "@config/theme.json";
 
 const homepage = await getEntryBySlug("homepage", "index");
-const { banner, feature, services, workflow, call_to_action } = homepage.data;
+const { banner, feature, services, call_to_action } = homepage.data;
 ---
 
 <Base>
@@ -47,19 +46,11 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
           feature!.features.map((item, i) => (
             <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
               {item.icon && (
-                // <Image
-                //   class="mx-auto"
-                //   src={item.icon}
-                //   width={30}
-                //   height={30}
-                //   alt=""
-                // />
                 <img
                   class="mx-auto"
                   alt={item.icon}
                   src={item.icon}
-                  width={30}
-                  height={30}
+                  style="height:30px;width:auto;"
                 />
               )}
               <div class="mt-4">
@@ -138,8 +129,13 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
 
 <style>
   .hero-bg {
-    background-color: #dfdbe5;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    background-color: #45386f;
+    background-color: ;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+  }
+
+  .hero-bg * {
+    color: white;
   }
 
   @media screen and (min-width: 768px) {
@@ -150,6 +146,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
       background-color: #dfdbe5;
       background-image: url("/images/wave.svg");
       background-size: cover;
+      background-position: bottom center;
     }
   }
   .store-btns {

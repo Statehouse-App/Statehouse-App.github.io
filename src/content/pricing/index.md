@@ -3,52 +3,38 @@ title: Pricing
 description: "meta description"
 draft: false
 plans:
-- title: Basic Plan
-  subtitle: Best For Small Individuals
-  price: 49
-  type: month
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-  button:
-    label: Get started for free
-    link: "/contact"
+  - title: Basic Plan
+    subtitle: Best For Individual Projects
+    price: 0
+    type: month
+    features:
+      - Updates on project legislation
+      - Unlimited Meeting Notes
+      - Legislator sentiment tracking
+      - Legislature data including legislator details, bill details, bill actions, bill versions, and more
+      - Up to three projects
+      - Up to three bills per project
 
-- title: Professional Plan
-  subtitle: Best For Professionals
-  price: 69
-  type: month
-  recommended: true
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-    - Cloud Service
-    - Best Dashboard
-  button:
-    label: Get started
-    link: "/contact"
-
-- title: Business Plan
-  subtitle: Best For Large Individuals
-  price: 99
-  type: month
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-  button:
-    label: Get started
-    link: "/contact"
+  - title: Premium Plan
+    subtitle: Best For Professionals/Teams
+    price: 9.99
+    priceAnnual: 99.99
+    type: month
+    recommended: true
+    features:
+      - Updates on project legislation
+      - Unlimited Meeting Notes
+      - Legislator sentiment tracking
+      - Legislature data including legislator details, bill details, bill actions, bill versions, and more
+      - Unlimited projects
+      - Unlimited bills per project
 
 call_to_action:
-  title: Need a larger plan?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
-  image: '/images/cta.png'
+  title: Questions? Need help?
+  content: You can check out our FAQ page, or email us directly at support@statehouseapp.com.
+  image: "/images/cta.png"
   button:
     enable: true
     label: "Contact Us"
-    link: "/contact"
-    
+    link: "mailto:support@statehouseapp.com"
 ---
