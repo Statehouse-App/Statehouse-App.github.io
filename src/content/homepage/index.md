@@ -44,7 +44,6 @@ services:
 call_to_action:
   title: Questions? Need Help?
   content: If you have any questions or problems using the app, or want to delete your account, contact us at support@statehouseapp.com anytime for a quick reply. We're always looking for ways to improve the app, so feature ideas or bug reports are very welcome!
-  image: "images/support.svg"
   button:
     enable: true
     label: "Contact Us"

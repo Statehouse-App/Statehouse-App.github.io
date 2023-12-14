@@ -4,6 +4,7 @@ import Cta from "@layouts/components/Cta.astro";
 import IPhoneWrapper from "@layouts/components/IPhoneWrapper.astro";
 import { markdownify } from "@lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
+import ctaImage from "../../public/images/support.svg";
 
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, feature, services, call_to_action } = homepage.data;
@@ -123,7 +124,7 @@ const { banner, feature, services, call_to_action } = homepage.data;
 
   <!-- Call to Action -->
   <div id="support">
-    <Cta cta={call_to_action} />
+    <Cta cta={call_to_action} image={ctaImage} />
   </div>
 </Base>
 
