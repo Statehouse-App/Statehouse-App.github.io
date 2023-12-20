@@ -5,9 +5,9 @@ banner:
   image: /images/banner-art.png
   buttons:
     - image: "/images/apple.svg"
-      link: "https://tbd.com"
+      link: "https://apps.apple.com/us/app/statehouse-app/id6472077334"
     - image: "/images/google-play-badge.png"
-      link: "https://tbd.com"
+      link: "https://play.google.com/store/apps/details?id=com.scruffysoftware.statehouse"
 
 # feature
 feature:

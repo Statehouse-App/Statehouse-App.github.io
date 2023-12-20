@@ -20,7 +20,7 @@ const { banner, feature, services, call_to_action } = homepage.data;
 
         {/* Content */}
         <div class={`service-content mt-5 md:mt-0 md:order-1`}>
-          <h2 class="font-bold leading-[40px]">{banner?.title}</h2>
+          <h2 class="leading-[40px]">{banner?.title}</h2>
           <p class="mb-2 mt-4">{banner?.content}</p>
           <div class="store-btns">
             {
@@ -81,7 +81,7 @@ const { banner, feature, services, call_to_action } = homepage.data;
               <div
                 class={`service-content mt-5 md:mt-0 ${!isOdd && "md:order-1"}`}
               >
-                <h2 class="font-bold leading-[40px]">{service?.title}</h2>
+                <h2 class="leading-[40px]">{service?.title}</h2>
                 <p class="mb-2 mt-4">{service?.content}</p>
                 {service?.button?.enable && (
                   <a
